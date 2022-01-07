@@ -2,7 +2,7 @@ extends layout
 
 block content
   h1 New Message
-  form(method='post')
+  form(method='post' action="/new")
     input(type='text' placeholder='Name' name='username')
     input(type='text' placeholder='Title' name='title')
     input(type='text' placeholder='Mensaje' name='msg')
