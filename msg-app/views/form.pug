@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 New Message
+  form(method='post')
+    input(type='text' placeholder='Name' name='username')
+    input(type='text' placeholder='Title' name='title')
+    input(type='text' placeholder='Mensaje' name='msg')
+    button(type='submit') Sumbit post
