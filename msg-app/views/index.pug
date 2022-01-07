@@ -2,5 +2,14 @@ extends layout
 
 block content
 
-  h1 Message Board
-  a(href="/new")  as
+  h1= title
+  button 
+    a(href="/new") Make a new post!
+  section#posts
+    each mesagge in messages
+      .post
+        h2=mesagge.title
+        h3=mesagge.text
+        .info
+          p=mesagge.user
+          p=mesagge.date
